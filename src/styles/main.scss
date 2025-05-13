@@ -3,6 +3,7 @@
 @import './base/variables';
 @import './components/layout/header';
 @import './components/layout/footer';
+@import './components/coursesCard/coursesCard';
 @import './pages/index.scss';
 
 *{
@@ -22,6 +23,7 @@ body{
 
 button{
     border: none;
+    cursor: pointer;
 }
 input{
     outline: none;
