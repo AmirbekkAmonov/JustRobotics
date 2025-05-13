@@ -31,9 +31,9 @@ function Header() {
         <nav className="header__nav">
           <a href="#home" className="header__link">Главная</a>
           <a href="#about" className="header__link">O нас</a>
-          <div className="header__dropdown" ref={dropdownRef}>
+          <div className="header__dropdown " ref={dropdownRef}>
             <button
-              className="header__link header__dropdown-btn"
+              className="header__link header__dropdown-btn no-animate"
               onClick={() => setDropdownOpen(open => !open)}
             >
               Курсы ▼
