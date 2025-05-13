@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+@import './assets/font';
+@import './base/variables';
+@import './components/layout/header';
+@import './components/layout/footer';
+@import './pages/index.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Tektur', sans-serif;
+    background-color: $background-color;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+button{
+    border: none;
+}
+input{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}

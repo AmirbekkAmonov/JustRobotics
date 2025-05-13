@@ -1,0 +1,149 @@
+.header {
+    padding: 10px 30px;
+    border-top: 14px solid $border-color;
+    border-bottom: 14px solid $border-color;
+
+    .header__container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        user-select: none;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 46px;
+        font-size: 24px;
+
+        .header__link {
+            font-family: "Involve";
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: $text-color;
+
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
+
+        .header__dropdown-btn {
+            border: 2px solid $secondary-color;
+            border-radius: 25px;
+            color: $secondary-color;
+            background: transparent;
+            padding: 8px 15px;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+            outline: none;
+        }
+
+        .header__dropdown-btn:hover,
+        .header__dropdown-btn:focus {
+            background: $secondary-color;
+            color: $primary-color;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .header__call-btn {
+            padding: 15px 53px;
+            font-family: "Tektur";
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+            border-radius: 7px;
+            background-color: $secondary-color;
+            box-shadow: $btn-shadow;
+            cursor: pointer;
+        }
+
+        .header__lang {
+            display: flex;
+            align-items: center;
+
+            .header__lang-btn {
+                font-family: "Tektur";
+                font-weight: 400;
+                font-size: 21.66px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                padding: 12px 20px;
+                border-radius: 14px;
+                background: transparent;
+                color: $secondary-color;
+                cursor: pointer;
+            }
+
+            .header__lang-btn--active {
+                background: $secondary-color;
+                color: $text-color;
+                border: $lang-btn-border;
+            }
+
+
+        }
+    }
+
+    &__dropdown {
+        position: relative;
+    }
+
+    &__dropdown-menu {
+        width: 290px;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: transparent;
+        z-index: 10;
+        padding-top: 7px;
+    }
+
+    &__dropdown-item {
+        border: 1px solid $secondary-color;
+        border-radius: 25px;
+        color: $secondary-color;
+        background: transparent;
+        font-family: "Involve";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        padding: 10px 22px;
+        margin-bottom: 0;
+        margin-top: 0;
+        text-decoration: none;
+        transition: background 0.2s, color 0.2s;
+        display: block;
+        width: 100%;
+
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+
+    &__dropdown-item:hover,
+    &__dropdown-item:focus {
+        background: $secondary-color;
+        color: $primary-color;
+    }
+}
