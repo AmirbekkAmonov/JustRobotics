@@ -29,3 +29,15 @@ input{
 a{
     text-decoration: none;
 }
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: $background-color;
+}
+::-webkit-scrollbar-thumb{
+    background: $secondary-color;
+    border-radius: 10px;
+}
+

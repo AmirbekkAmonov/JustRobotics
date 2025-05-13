@@ -1,7 +1,8 @@
 
 function call() {
   return (
-    <div>call</div>
+    <div className="call">
+    </div>
   )
 }
 
