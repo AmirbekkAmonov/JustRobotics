@@ -93,6 +93,13 @@
             background-color: $secondary-color;
             box-shadow: $btn-shadow;
             cursor: pointer;
+            color: $primary-color;
+            transition: background 0.15s, box-shadow 0.15s, transform 0.1s;
+        }
+        .header__call-btn:active {
+            background-color: darken($background-color-4, 10%);
+            box-shadow: 0 2px 8px 0 #00000022;
+            transform: scale(0.97);
         }
 
         .header__lang {
